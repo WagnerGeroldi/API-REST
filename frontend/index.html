@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Consumindo API</title>
+
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Consumindo API com NodeJS</header>
+    <div class="container">
+
+      <h2>Listagem de produtos</h2>
+      
+      <ul id="product-list"></ul>
+      
+    <hr />
+
+    <h2>Cadastrar Produtos</h2>
+    
+    <form id="form">
+      <div>
+        <label for="name">Nome</label>
+        <input type="text" name="name" />
+      </div>
+      <div>
+        <label for="brand">Marca</label>
+        <input type="text" name="brand" />
+      </div>
+      <div>
+        <label for="price">Preço</label>
+        <input type="text" name="price" />
+      </div>
+      <div>
+        <button type="submit">Cadastrar</button>
+      </div>
+    </form>
+    
+    <div id="edit" class="hidden">
+      <br />
+      <hr />
+      <br />
+      <h2>Alterar Produtos</h2>
+      
+      <form id="formEdit">
+        <input type="hidden" name="id" id="id" />
+        <div>
+          <label for="name">Nome</label>
+          <input type="text" name="name" />
+        </div>
+        <div>
+          <label for="brand">Marca</label>
+          <input type="text" name="brand" />
+        </div>
+        <div>
+          <label for="price">Preço</label>
+          <input type="text" name="price" />
+        </div>
+        <div>
+          <button type="submit">Alterar</button> <button type="button" onclick="cancelar()">Cancelar</button>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+    <script src="index.js"></script>
+  </body>
+</html>
