@@ -28,5 +28,3 @@ CRUD desenvolvido com as seguintes tecnologias
 ![alterando produtos](https://user-images.githubusercontent.com/74829196/145618602-f9fae0ff-2ea5-4447-acdf-34f21e8804b2.png)
 
 
-
-em breve o README ficará completo com as informações
